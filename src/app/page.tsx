@@ -12,7 +12,7 @@ export default function Home() {
     alert("クリック");
   };
   return (
-    <main className="min-h-screen p-24 flex flex-col items-center">
+    <main className="min-h-screen p-12 flex flex-col items-center">
       <Gender onClick={eventClick} />
       <PersonalData />
       <Activity />
