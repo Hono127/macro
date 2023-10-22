@@ -7,7 +7,7 @@ const Activity = () => {
       <div>
         <ul className="flex flex-col items-center justify-center gap-5">
           <li className="w-full">
-            <input id="static" type="checkbox" className="hidden peer" />
+            <input id="static" type="radio" className="hidden peer" name="activeState" />
             <label
               className="border-collapse border-slate-400 border-2 block peer-checked:bg-sky-500 h-11 p-2 rounded-md"
               htmlFor="static"
@@ -16,7 +16,7 @@ const Activity = () => {
             </label>
           </li>
           <li className="w-full">
-            <input id="normal" type="checkbox" className="hidden peer" />
+            <input id="normal" type="radio" className="hidden peer" name="activeState" />
             <label
               className="border-collapse border-slate-400 border-2 block peer-checked:bg-sky-500 h-11 p-2 rounded-md"
               htmlFor="normal"
@@ -25,7 +25,7 @@ const Activity = () => {
             </label>
           </li>
           <li className="w-full">
-            <input id="active" type="checkbox" className="hidden peer" />
+            <input id="active" type="radio" className="hidden peer" name="activeState" />
             <label
               className="border-collapse border-slate-400 border-2 block peer-checked:bg-sky-500 h-11 p-2 rounded-md"
               htmlFor="active"
