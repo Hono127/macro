@@ -1,14 +1,19 @@
-import React from "react";
+import React, { FC, memo } from "react";
+import SectionHeading from "../atoms/SectionHeading";
 
-const Purpose = () => {
+const Purpose: FC = memo(() => {
   return (
     <section className="purpose mb-20">
-      <h2 className="text-4xl mb-7">目的の選択</h2>
-
+      <SectionHeading>目的の選択</SectionHeading>
       <div>
         <ul className="flex flex-col items-center justify-center gap-5">
           <li className="w-full">
-            <input id="fat" type="checkbox" className="hidden peer" />
+            <input
+              id="fat"
+              type="radio"
+              name="purpose"
+              className="hidden peer"
+            />
             <label
               className="border-collapse border-slate-400 border-2 block peer-checked:bg-red-500 p-2 text-center rounded-md"
               htmlFor="fat"
@@ -17,7 +22,12 @@ const Purpose = () => {
             </label>
           </li>
           <li className="w-full">
-            <input id="keep" type="checkbox" className="hidden peer" />
+            <input
+              id="keep"
+              type="radio"
+              name="purpose"
+              className="hidden peer"
+            />
             <label
               className="border-collapse border-slate-400 border-2 block peer-checked:bg-yellow-500 p-2 text-center rounded-md"
               htmlFor="keep"
@@ -26,7 +36,12 @@ const Purpose = () => {
             </label>
           </li>
           <li className="w-full">
-            <input id="slim" type="checkbox" className="hidden peer" />
+            <input
+              id="slim"
+              type="radio"
+              name="purpose"
+              className="hidden peer"
+            />
             <label
               className="border-collapse border-slate-400 border-2 block peer-checked:bg-blue-500 p-2 text-center rounded-md"
               htmlFor="slim"
@@ -38,6 +53,6 @@ const Purpose = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Purpose;

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { FC, memo } from "react";
+import SectionHeading from "../atoms/SectionHeading";
 
-const PersonalData = () => {
+const PersonalData: FC = memo(() => {
   return (
     <section className="personalData mb-20">
-      <h2 className="text-center text-4xl mb-7">身長、体重、年齢の入力</h2>
+      <SectionHeading>身長、体重、年齢の入力</SectionHeading>
       <div>
         <ul className="flex flex-col gap-5 items-center justify-center">
           <li>
@@ -36,6 +37,6 @@ const PersonalData = () => {
       <br />
     </section>
   );
-};
+});
 
 export default PersonalData;
