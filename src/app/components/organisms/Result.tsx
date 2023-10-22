@@ -1,11 +1,16 @@
-import React from "react";
+import React, { FC, memo } from "react";
+import PrimaryButton from "../atoms/PrimaryButton";
+import SectionHeading from "../atoms/SectionHeading";
 
-const Result = () => {
+const Result: FC = memo(() => {
   return (
     <section className="result mb-20">
-      <button className="w-full p-3 bg-sky-400 rounded-md mb-11">
-        計算開始
-      </button>
+      <PrimaryButton />
+      <SectionHeading>計算結果</SectionHeading>
+      {/*
+        男性：10×体重kg＋6.25×身長cm−5×年齢＋5
+        女性：10×体重kg＋6.25×身長cm−5×年齢−161 
+      */}
       <div>
         <ul className="flex flex-col justify-center items-start w-full gap-8 mb-20">
           <li className="border-2 w-64">タンパク質：500</li>
@@ -16,6 +21,6 @@ const Result = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Result;
