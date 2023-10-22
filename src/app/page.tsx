@@ -8,9 +8,6 @@ import Purpose from './components/organisms/Purpose'
 import Result from './components/organisms/Result'
 
 export default function Home() {
-  const eventClick = () => {
-    alert('クリック')
-  }
   return (
     <main className='min-h-screen p-12 flex flex-col items-center'>
       <Gender />
